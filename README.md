@@ -2,18 +2,19 @@
 
 This is a Jekyll automatic installer for Bash On Ubuntu on Windows 10. It simplifies the process of installing correct version of ruby,gem,and jekyll.
   
-# Usage
+## Usage
 
 In Bash On Ubuntu On Windows, run:
 ```sh
 bash <(wget -qO- https://raw.githubusercontent.com/patrick330602/Jekyll-Installer-For-WSL/master/jekyll.sh)
 ```
+Then following the instruction on the screen.
 
-# Credit
+## Credit
 
 This script is inspired by a post by Jordan Bisterkov <http://biserkov.com/blog/2016/06/04/Steps-to-install-Jekyll-on-Ubuntu-on-Windows/>. This script is maintained by me. 
 
-# Lincense
+## Lincense
 
 The Project is under the license of [WTFPL](https://raw.githubusercontent.com/patrick330602/Jekyll-Installer-For-WSL/master/LICENSE). Just do what the fuck you want.
  
