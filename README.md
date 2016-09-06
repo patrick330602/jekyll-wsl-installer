@@ -6,7 +6,7 @@ This is a Jekyll automatic installer for Bash On Ubuntu on Windows 10. It simpli
 
 In Bash On Ubuntu On Windows, run:
 ```sh
-bash <(https://raw.githubusercontent.com/patrick330602/Jekyll-Installer-For-WSL/master/jekyll.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/patrick330602/Jekyll-Installer-For-WSL/master/jekyll.sh)
 ```
 
 # Credit
