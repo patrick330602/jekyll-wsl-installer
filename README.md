@@ -15,5 +15,5 @@ This script is inspired by a post by Jordan Bisterkov <http://biserkov.com/blog/
 
 # Lincense
 
-The Project is under the license of WTFPL. Just do what the fuck you want.
+The Project is under the license of [WTFPL](https://raw.githubusercontent.com/patrick330602/Jekyll-Installer-For-WSL/master/LICENSE). Just do what the fuck you want.
  
