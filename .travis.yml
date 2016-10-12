@@ -1,0 +1,11 @@
+sudo: true
+dist: trusty
+language: sh
+before_script:
+    - echo "n" >> test1
+    - echo "np" >> test2
+    - echo "e" >> test3
+script:
+    - bash hexo.sh < test1
+    - bash hexo.sh < test2
+    - bash hexo.sh < test3
