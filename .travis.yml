@@ -6,6 +6,6 @@ before_script:
     - echo "np" >> test2
     - echo "e" >> test3
 script:
-    - bash hexo.sh < test1
-    - bash hexo.sh < test2
-    - bash hexo.sh < test3
+    - bash jekyll.sh < test1
+    - bash jekyll.sh < test2
+    - bash jekyll.sh < test3
