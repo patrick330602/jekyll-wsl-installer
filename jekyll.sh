@@ -36,8 +36,8 @@ echo "e:Exit"
 echo "------------------------------------------"
 read -p ">" option
 if [ "${option}" == "n" ] || [ "${option}" == "np" ]; then
-    echo "${green}Add repository to apt-get...${reset}"
-    sudo apt-add-repository ppa:brightbox/ruby-ng
+    echo "${green}Adding repository...${reset}"
+    sudo apt-add-repository ppa:brightbox/ruby-ng -y
     echo "${green}Updating apt-get...${reset}"
     sudo apt-get update
     echo "${green}Installing ruby...${reset}"
