@@ -35,7 +35,10 @@ echo "np:Install With Pagination(With Ruby 2.3)"
 echo "e:Exit"
 echo "------------------------------------------"
 read -p ">" option
-if [ "${option}" == "n" ] || [ "${option}" == "np" ]; then
+#if [ "${option}" == "n" ] || [ "${option}" == "np" ]; then
+if [ "${option}" == "e" ]; then
+    echo "${red}operation cancelled.${reset}"   
+else
     echo "${green}Adding repository...${reset}"
     sudo apt-add-repository ppa:brightbox/ruby-ng -y
     echo "${green}Updating apt-get...${reset}"
@@ -58,7 +61,5 @@ if [ "${option}" == "n" ] || [ "${option}" == "np" ]; then
     echo "${cyan}******************************************"
     echo "You have successfully installed Jekyll."
     echo "${bold}ruby version${reset}${cyan}:`ruby -v`"
-    echo "${bold}jekyll version${reset}${cyan}:`jekyll -v`${reset}"   
-else
-    echo "${red}operation cancelled.${reset}"
+    echo "${bold}jekyll version${reset}${cyan}:`jekyll -v`${reset}"
 fi
