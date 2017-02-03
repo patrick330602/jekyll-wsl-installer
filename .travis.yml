@@ -2,10 +2,8 @@ sudo: true
 dist: trusty
 language: sh
 before_script:
-    - echo "n" >> test1
-    - echo "np" >> test2
-    - echo "e" >> test3
+    - echo "np" >> test1
+    - echo "e" >> test2
 script:
     - bash jekyll.sh < test1
     - bash jekyll.sh < test2
-    - bash jekyll.sh < test3
