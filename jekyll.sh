@@ -39,7 +39,8 @@ read -p ">" option
 if [ "${option}" == "e" ]; then
     echo "${red}operation cancelled.${reset}"   
 else
-    if [ ! (ruby -v | grep "ruby 2")&>/dev/null ]; then
+    (ruby -v | grep "ruby 2")&>/dev/null
+    if [ "$?" != "0" ]; then
         echo "${green}Adding repository...${reset}"
         sudo apt-add-repository ppa:brightbox/ruby-ng -y
         echo "${green}Updating apt-get...${reset}"
