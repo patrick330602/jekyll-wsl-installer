@@ -39,12 +39,14 @@ read -p ">" option
 if [ "${option}" == "e" ]; then
     echo "${red}operation cancelled.${reset}"   
 else
-    echo "${green}Adding repository...${reset}"
-    sudo apt-add-repository ppa:brightbox/ruby-ng -y
-    echo "${green}Updating apt-get...${reset}"
-    sudo apt-get update
-    echo "${green}Installing ruby...${reset}"
-    sudo apt-get install ruby2.3 ruby2.3-dev -y
+    if [ ! (ruby -v | grep "ruby 2")&>/dev/null ]; then
+        echo "${green}Adding repository...${reset}"
+        sudo apt-add-repository ppa:brightbox/ruby-ng -y
+        echo "${green}Updating apt-get...${reset}"
+        sudo apt-get update
+        echo "${green}Installing ruby...${reset}"
+        sudo apt-get install ruby2.3 ruby2.3-dev -y
+    fi
     echo "${green}Updating gem...${reset}"
     sudo gem update --system
     echo "${green}Installing build-essential...${reset}"
