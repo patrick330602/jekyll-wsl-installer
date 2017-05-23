@@ -3,6 +3,10 @@
 [![asciicast](https://asciinema.org/a/101997.png)](https://asciinema.org/a/101997)
 
 This is a Jekyll automatic installer for Bash On Ubuntu on Windows 10. It simplifies the process of installing correct version of ruby,gem,and jekyll.
+
+> ***NOTICE***
+>
+> for Windows 10 Creators Update or higher, this script is no longer needed. Everyting now works as expected.
   
 ## Usage
 
